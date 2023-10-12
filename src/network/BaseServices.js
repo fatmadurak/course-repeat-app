@@ -23,7 +23,17 @@ getAll:async(entityUrl)=>{
 },
 
 
+getById: async (entityUrl, id) => {
+    let response = null;
 
+    await axiosInstance
+      .get(`${entityUrl}/${id}`)
+      .then((res) => {
+        response = res.data;
+      });
+
+    return response;
+  },
 
 
 

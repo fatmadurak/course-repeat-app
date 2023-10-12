@@ -1,8 +1,12 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import { getProducts } from '../../network/requests/ProductServices';
+import { Link } from 'react-router-dom';
+
 
 function ProductList() {
+
+  
   const { isLoading, error, data } = useQuery('products', getProducts);
 
   if (isLoading) return 'Loading...';
@@ -15,7 +19,7 @@ function ProductList() {
         <h1>Product List</h1>
         <ul>
           {data.map((item) => (
-            <li key={item.id}>{item.name}</li>
+           <Link to={`/products/${item.id}`} key={item.id}> <li >{item.name}</li></Link>
           ))}
         </ul>
       </div>

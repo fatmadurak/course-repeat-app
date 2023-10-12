@@ -4,6 +4,7 @@ import React from 'react'
 import { Routes,Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductList from "./pages/product/ProductList";
+import ProductDetail from './pages/productDetail';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
 <ul>
     <li><Link to="/">Home</Link></li>
-    <li><Link to="products">productList</Link></li>
+    <li><Link to="/products">productList</Link></li>
+    <li><Link to="/products/productId">productDetail</Link></li>
 
   </ul>
    <Routes>
@@ -21,7 +23,9 @@ function App() {
  
    
    <Route path='/'  element={<Home/>}/>
-   <Route path='products' element={<ProductList/>}/>
+   <Route path='/products' element={<ProductList/>}/>
+   <Route path='/products/:id' element={<ProductDetail/>}/>
+
 
    </Routes>
     
