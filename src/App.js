@@ -13,15 +13,15 @@ function App() {
 
 <ul>
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/product_list">productList</Link></li>
+    <li><Link to="products">productList</Link></li>
 
   </ul>
    <Routes>
 
  
    
-   <Route path='/' exact element={<Home/>}/>
-   <Route path='/product_list' element={<ProductList/>}/>
+   <Route path='/'  element={<Home/>}/>
+   <Route path='products' element={<ProductList/>}/>
 
    </Routes>
     

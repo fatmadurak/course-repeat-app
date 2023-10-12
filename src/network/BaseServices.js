@@ -1,14 +1,34 @@
-import axiosInstance from "./AxiosInstance"
+import axios from "axios";
+
+import { axiosInstance } from "./axiosInstance";
+
+export const baseServices={
+
+getAll:async(entityUrl)=>{
 
 
-export const baseServices = {
-    getAll: async (entityUrl) => {
-      try {
-        const response = await axiosInstance.get(entityUrl);
-        return response.data;
-      } catch (error) {
-        console.error('Hata oluştu:', error);
-        throw error; 
-      }
-    }
-  };
+
+    let response = [];
+
+
+    await axiosInstance
+        .get(entityUrl)
+        .then(res => {
+            response = res.data;
+        })
+
+    return response;
+
+
+},
+
+
+
+
+
+
+
+
+
+
+}
