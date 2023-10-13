@@ -21,7 +21,7 @@ function ProductDetail() {
   return (
     <div>
       <h2>Product Detail</h2>
-      <p>Name: {product.name}</p>
+      <p>Name: {product.title}</p>
     </div>
   );
 }

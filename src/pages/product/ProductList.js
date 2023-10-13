@@ -16,10 +16,10 @@ function ProductList() {
   if (data) {
     return (
       <div>
-        <h1>Product List</h1>
+   
         <ul>
           {data.map((item) => (
-           <Link to={`/products/${item.id}`} key={item.id}> <li >{item.name}</li></Link>
+           <Link to={`/products/${item.id}`} key={item.id}> <li >{item.title}</li></Link>
           ))}
         </ul>
       </div>
