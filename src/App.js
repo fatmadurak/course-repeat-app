@@ -2,8 +2,7 @@
 import './App.css';
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import ProductList from "./pages/product/ProductList";
+import ProductList from './pages/product/ProductList';
 import ProductDetail from './pages/productDetail';
 import Navbar from './components/Navbar/index';
 
@@ -15,7 +14,7 @@ function App() {
     <div className='container'>
       <Routes>
   
-        <Route path='/' element={<ProductList />} />
+        <Route path='/' element={<ProductList/>} />
         <Route path='/products/:id' element={<ProductDetail />} />
       </Routes>
     </div>

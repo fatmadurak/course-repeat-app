@@ -3,26 +3,29 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
-import Grid from "@mui/material/Grid";
 
-function ProductCard({ product }) {
+
+
+function ProductCard({ item }) {
   return (
-    <Grid item xs={12} sm={6} md={4} lg={8} >
-      <Card>
-        <Link to={`/products/${product.id}`}>
-          <CardMedia
-            component="img"
-            height="140"
-            image={product.images[0]}
-            alt={product.title}
-          />
-        </Link>
-        <CardContent>
-          <Typography variant="h6">{product.title}</Typography>
-        </CardContent>
-      </Card>
-    </Grid>
+    <Card >
+    <CardMedia
+      sx={{ height: 250, width: '100%', objectFit: 'cover' }}
+      image={item.images[0]}
+     
+    />
+    <CardContent>
+    <Typography gutterBottom variant="h5" component="div">
+       {item.title}
+        </Typography>
+      <Typography variant="body2" color="text.secondary">
+       {item.description}
+      </Typography>
+    </CardContent>
+
+  </Card>
+  
+
   );
 }
 

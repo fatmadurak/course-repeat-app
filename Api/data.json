@@ -10,28 +10,11 @@
         ],
         "id": 1
       },
-      {
-        "id": 2,
-        "title": "iPhone X",
-        "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-        "price": 899,
-        "discountPercentage": 17.94,
-        "rating": 4.44,
-        "stock": 34,
-        "brand": "Apple",
-        "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-        "images": [
-          "https://i.dummyjson.com/data/products/2/1.jpg",
-          "https://i.dummyjson.com/data/products/2/2.jpg",
-          "https://i.dummyjson.com/data/products/2/3.jpg",
-          "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-        ]
-      },
+     
       {
         "id": 3,
         "title": "Samsung Universe 9",
-        "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+        "description": "Samsung's new variant which goes beyond Galaxy ",
         "price": 1249,
         "discountPercentage": 15.46,
         "rating": 4.09,
@@ -60,23 +43,6 @@
           "https://i.dummyjson.com/data/products/4/3.jpg",
           "https://i.dummyjson.com/data/products/4/4.jpg",
           "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Huawei P30",
-        "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-        "price": 499,
-        "discountPercentage": 10.58,
-        "rating": 4.09,
-        "stock": 32,
-        "brand": "Huawei",
-        "category": "smartphones",
-        "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-        "images": [
-          "https://i.dummyjson.com/data/products/5/1.jpg",
-          "https://i.dummyjson.com/data/products/5/2.jpg",
-          "https://i.dummyjson.com/data/products/5/3.jpg"
         ]
       },
       {
@@ -118,7 +84,7 @@
       {
         "id": 8,
         "title": "Microsoft Surface Laptop 4",
-        "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+        "description": "Style and speed. Stand out on HD video calls backed by Studio Mics.",
         "price": 1499,
         "discountPercentage": 10.23,
         "rating": 4.43,
@@ -153,24 +119,7 @@
           "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
         ]
       },
-      {
-        "id": 10,
-        "title": "HP Pavilion 15-DK1056WM",
-        "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-        "price": 1099,
-        "discountPercentage": 6.18,
-        "rating": 4.43,
-        "stock": 89,
-        "brand": "HP Pavilion",
-        "category": "laptops",
-        "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
-        "images": [
-          "https://i.dummyjson.com/data/products/10/1.jpg",
-          "https://i.dummyjson.com/data/products/10/2.jpg",
-          "https://i.dummyjson.com/data/products/10/3.jpg",
-          "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-        ]
-      },
+     
       {
         "id": 11,
         "title": "perfume Oil",
@@ -188,26 +137,8 @@
           "https://i.dummyjson.com/data/products/11/3.jpg",
           "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
         ]
-      },
-      {
-        "id": 13,
-        "title": "Fog Scent Xpressio Perfume",
-        "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
-        "price": 13,
-        "discountPercentage": 8.14,
-        "rating": 4.59,
-        "stock": 61,
-        "brand": "Fog Scent Xpressio",
-        "category": "fragrances",
-        "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
-        "images": [
-          "https://i.dummyjson.com/data/products/13/1.jpg",
-          "https://i.dummyjson.com/data/products/13/2.png",
-          "https://i.dummyjson.com/data/products/13/3.jpg",
-          "https://i.dummyjson.com/data/products/13/4.jpg",
-          "https://i.dummyjson.com/data/products/13/thumbnail.webp"
-        ]
       }
+ 
     ],
     "users": [
       {
@@ -257,81 +188,15 @@
         "password": "12345",
         "id": 14
       },
-      {
-        "id": 15
-      },
-      {
-        "id": 16
-      },
-      {
-        "id": 17
-      },
-      {
-        "id": 18
-      },
-      {
-        "id": 19
-      },
-      {
-        "id": 20
-      },
-      {
-        "id": 21
-      },
-      {
-        "id": 22
-      },
-      {
-        "id": 23
-      },
-      {
-        "id": 24
-      },
-      {
-        "id": 25
-      },
+     
+      
       {
         "role": "user",
         "email": "fatmabadillidurak12@gmail.com",
         "password": "12345",
         "id": 26
-      },
-      {
-        "id": 27
-      },
-      {
-        "id": 28
-      },
-      {
-        "id": 29
-      },
-      {
-        "id": 30
-      },
-      {
-        "id": 31
-      },
-      {
-        "id": 32
-      },
-      {
-        "id": 33
-      },
-      {
-        "id": 34
-      },
-      {
-        "id": 35
-      },
-      {
-        "id": 36
-      },
-      {
-        "id": 37
-      },
-      {
-        "id": 38
       }
+   
     ],
     "orders": [
       {
@@ -339,48 +204,7 @@
         "email": "badilii@gmail.com",
         "items": "[1]",
         "id": 2
-      },
-      {
-        "address": "Narlıkuyu mahallesi",
-        "email": "test2@gmail.com",
-        "items": "[2]",
-        "id": 3
-      },
-      {
-        "address": "İSTANBUL/NİŞANTAŞI",
-        "email": "test@gmail.com",
-        "items": "[10,9,6,7]",
-        "id": 4
-      },
-      {
-        "address": "urfa",
-        "email": "badiliifatmagmail@.com",
-        "items": "[1]",
-        "id": 5
-      },
-      {
-        "address": "selçuklu/Konya",
-        "email": "mervenur@gmail.com",
-        "items": "[6,7,8,10]",
-        "id": 6
-      },
-      {
-        "address": "Karatay/Konya",
-        "email": "usame@gmail.com",
-        "items": "[1,2,3]",
-        "id": 7
-      },
-      {
-        "address": "SELÇUKLU/KONYA",
-        "email": "fatma@gmail.com",
-        "items": "[2,1]",
-        "id": 8
-      },
-      {
-        "address": "Nalçacı/KONYA",
-        "email": "FATMA@GMAİL.COM",
-        "items": "[2,4]",
-        "id": 9
       }
+     
     ]
   }

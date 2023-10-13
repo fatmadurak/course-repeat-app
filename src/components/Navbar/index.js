@@ -1,49 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Styles from "./styles.module.css";
-import Button from "@mui/material/Button";
-import styled from "@emotion/styled";
+import { AppBar, Container, Toolbar, Typography } from "@mui/material";
+
 
 function Navbar() {
   return (
-
-
-    <>
-    <ul className={Styles.nav_list}>
-      <li className={Styles.nav_item}>
-        <Link to="/">LOGO</Link>
-        <Link to="/">Products</Link>
-      </li>
-    
-      <div className={Styles.buttons}>
-      <Button
-       component={Link}
-       to="/sign_in"
-       variant="contained"
-       color="secondary"
-       size="medium"
-     >
-       LOGIN{" "}
-     </Button>
-     <Button
-       component={Link}
-       to="/sign_up"
-       variant="contained"
-       color="secondary"
-       size="medium"
-     >
-       REGISTER
-     </Button>
-      </div>
- 
-    </ul>
-      
-
-      
+    <Container maxWidth="lg">
+    <AppBar position="sticky" sx={{ background: '#fff' }}> 
    
-     </>
+        <Toolbar disableGutters>
+          <Typography   
+            variant="h6"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }} >
+            <Link to="/" style={{textDecoration:"none"}}>LOGO</Link>
+          </Typography >
 
-
+          <Typography  variant="h6"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+            
+            }}>
+            <Link to="/" style={{textDecoration:"none"}}>PRODUCTS</Link>
+          </Typography>
+        </Toolbar>
+   
+    </AppBar>
+    </Container>
   );
 }
 
