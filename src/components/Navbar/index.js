@@ -1,26 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "./styles.module.css";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
+import styled from "@emotion/styled";
 
 function Navbar() {
   return (
-    <ul>
-      <li>
+
+
+    <>
+    <ul className={Styles.nav_list}>
+      <li className={Styles.nav_item}>
         <Link to="/">LOGO</Link>
+        <Link to="/">Products</Link>
       </li>
-      <li>
-        <Link to="/">Product List</Link>
-      </li>
-      <li>
-        <Button component={Link} to="/some-page" variant="contained" size="medium">
-          Medium
-        </Button>
-        <Button component={Link} to="/another-page" variant="contained" size="medium">
-          Medium
-        </Button>
-      </li>
+    
+      <div className={Styles.buttons}>
+      <Button
+       component={Link}
+       to="/sign_in"
+       variant="contained"
+       color="secondary"
+       size="medium"
+     >
+       LOGIN{" "}
+     </Button>
+     <Button
+       component={Link}
+       to="/sign_up"
+       variant="contained"
+       color="secondary"
+       size="medium"
+     >
+       REGISTER
+     </Button>
+      </div>
+ 
     </ul>
+      
+
+      
+   
+     </>
+
+
   );
 }
 

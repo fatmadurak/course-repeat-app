@@ -1,32 +1,29 @@
-import React from 'react';
-import { useQuery } from 'react-query';
-import { getProducts } from '../../network/requests/ProductServices';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import { useQuery } from "react-query";
+import ProductCard from "../../components/ProductCard";
+import Grid from "@mui/material/Grid";
+import { getProducts } from "../../network/requests/ProductServices";
 
 function ProductList() {
+  const { isLoading, error, data } = useQuery("products", getProducts);
 
-  
-  const { isLoading, error, data } = useQuery('products', getProducts);
+  if (isLoading) return "Loading...";
 
-  if (isLoading) return 'Loading...';
-
-  if (error) return 'An error has occurred: ' + error.message;
+  if (error) return "An error has occurred: " + error.message;
 
   if (data) {
     return (
-      <div>
-   
-        <ul>
-          {data.map((item) => (
-           <Link to={`/products/${item.id}`} key={item.id}> <li >{item.title}</li></Link>
-          ))}
-        </ul>
-      </div>
+      <Grid container spacing={5}>
+        {data.map((item) => (
+          <Grid item xs={4} key={item.id}>
+            <ProductCard product={item} />
+          </Grid>
+        ))}
+      </Grid>
     );
   }
 
-  return null; 
+  return null;
 }
 
 export default ProductList;
