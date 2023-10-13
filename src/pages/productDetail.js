@@ -16,16 +16,12 @@ function ProductDetail() {
     return <div>An error has occurred: {error.message}</div>;
   }
 
- 
-  const product = data; 
+  const product = data;
 
   return (
     <div>
       <h2>Product Detail</h2>
-      <p>ID: {id}</p>
-      <p>Name: {product.name}</p> 
-      <p>Price: {product.price}</p>
-    
+      <p>Name: {product.name}</p>
     </div>
   );
 }

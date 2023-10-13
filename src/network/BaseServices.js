@@ -1,4 +1,4 @@
-import axios from "axios";
+
 
 import { axiosInstance } from "./axiosInstance";
 
@@ -24,16 +24,14 @@ getAll:async(entityUrl)=>{
 
 
 getById: async (entityUrl, id) => {
-    let response = null;
-
-    await axiosInstance
-      .get(`${entityUrl}/${id}`)
-      .then((res) => {
-        response = res.data;
-      });
-
-    return response;
-  },
+  try {
+      const res = await axiosInstance.get(`${entityUrl}/${id}`);
+      return res.data;
+  } catch (error) {
+      console.error('Hata oluştu:', error);
+      throw error;
+  }
+},
 
 
 
